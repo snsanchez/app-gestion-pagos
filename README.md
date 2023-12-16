@@ -27,9 +27,9 @@ Esta aplicación web utiliza Flask como backend y HTML/CSS/JavaScript para la in
 
 (hacer un print)
 
-Mensaje de Error: str(e)
-Tipo de Error: type(e).__name__
-Pila de Llamadas (Traceback): traceback.format_exc()
+- Mensaje de Error: str(e)
+- Tipo de Error: type(e).__name__
+- Pila de Llamadas (Traceback): traceback.format_exc()
 
 
 ## Uso
