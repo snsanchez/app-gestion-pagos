@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultado de la membresía</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tarjeta" id="tarjeta_resultado">
+
+            <h1 class="h1_resultado">{{ nombre }}</h1>
+            {% if mensaje %}
+                <p class="p_resultado">{{ mensaje }}</p>
+                {% if imagen %}
+                    <img class="img_resultado" src="{{ url_for('static', filename='images/' + imagen) }}" alt="Estado de membresía">
+                {% endif %}
+            {% else %}
+                <p class="p_resultado">No se encontró el usuario. Ingrese un id válido.</p>
+            {% endif %}
+
+        </div>
+    </body>
+</html>

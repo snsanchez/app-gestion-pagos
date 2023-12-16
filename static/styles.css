@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Estilos básicos */
+body {
+    font-family: 'Rubik', sans-serif;    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.tarjeta {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #3115e660;
+}
+
+/* Anular estilos de autocompletado */
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3015e6c7;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; 
+    font-size: 14px;
+    outline: none;
+
+}
+
+input[text], button{
+    font-family: 'Rubik', sans-serif;  
+}
+
+button:hover {
+    background-color: #3015e6eb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+}
+
+
+/*tarjeta de RESULTADO*/
+
+#tarjeta_resultado{
+    width: auto;
+    height: 250px;
+    
+}
+
+.img_resultado{
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*MEDIAQUERIES*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 250px;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width:100%;
+        margin-top: 4%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 88%;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px; 
+    }
+
+    #tarjeta_resultado {
+        width: 90%;
+        height: auto;
+    }
+    
+    .img_resultado {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Media query para tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Ajustes para tablets si los necesitas */
+}

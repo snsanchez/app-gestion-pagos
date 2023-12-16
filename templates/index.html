@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validar pago de la cuota</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/static/images/logo-unidos.jpeg" type="image/x-icon">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    </head>    
+    <body>
+        <div class="container">
+            <img class="logo" src="../static/images/logo_completo.png" alt="Logo de la Mutual UNIDOS">
+            <form class="tarjeta" id="buscarForm">
+                <label for="userId">Comprobá si estás al dia!</label>
+                <input type="text" id="userId" name="userId" placeholder="Ingrese su user id" autocomplete="off" required>
+                <button type="submit">Buscar</button>
+            </form>
+
+
+            <div id="resultado"></div>
+
+
+        </div>
+        
+        
+        <script src="../static/validacion.js"></script>
+        
+        
+    </body>
+</html>
